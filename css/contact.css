@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #888;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    transform: scale(.9);
+}
+
+.headerline {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+
+.logo {
+    position: absolute;
+    right: 8%;
+}
+
+.contact_tit_b {
+    text-align: center;
+    font-size: 3vw;
+    margin: 5% 0 10% 0;
+
+}
+
+.contact_tit_s h2 {
+    font-size: 2.8vw;
+}
+
+.contact_tit_s h5 {
+    font-size: 1.1vw;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.contact_wrap,
+.contact_check_wrap,
+.contact_check_area {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    margin: 20px;
+    padding: 50px 50px;
+    width: 80%;
+    color: #222;
+    margin: 0 auto;
+
+}
+
+form ul {
+    list-style: none;
+}
+
+form ul li {
+    margin: 5% 0 0 0;
+    padding: 0;
+}
+
+
+.contact_wrap label {
+    display: block;
+    float: left;
+    clear: left;
+    width: 20%;
+    font-size: 1.3vw;
+}
+
+.contact_wrap input {
+    display: block;
+    margin: 0;
+    padding: 2%;
+    width: 25%;
+    font-size: 0.9em;
+}
+
+.place {
+    display: flex;
+}
+
+.car_birth {
+    display: flex;
+}
+
+.buydate {
+    display: flex;
+}
+
+.birth {
+    width: 15%;
+    padding: 1px;
+
+}
+
+#car_model {
+    margin-right: 10%;
+}
+
+#addr2,
+#addr3 {
+    margin-left: 1%;
+}
+
+hr {
+    margin-top: 3%;
+}
+
+.contact_wrap input[type="radio"] {
+    width: 6%;
+}
+
+.contact_wrap input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+.contact_wrap input[type="radio"] tm {
+    vertical-align: -15px;
+}
+
+/****************개인정보 수집******************/
+.contact_check_wrap {
+    margin-top: 100px;
+}
+
+.contact_check_wrap label {
+    display: block;
+    float: left;
+    clear: left;
+    width: 70%;
+    font-size: 1.3vw;
+    padding: 4%;
+}
+
+.l_b {
+    width: 60%;
+}
+
+.l_b button {
+    margin: 5%;
+    width: 120px;
+    height: 120px;
+}
+
+.contact_check_wrap button {
+    width: 18%;
+    margin-top: 5%;
+    height: 48%;
+}
+
+.contact_check_area {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact_check_area li {
+    display: flex;
+}
+
+/*****************라디오버튼모양바꾸기*******************/
+.checks {
+    position: relative;
+    margin-top:3%;
+}
+.bdcheck{
+    position: relative;
+    display: flex;
+}
+.checks input[type="radio"] ,.bdcheck input[type="radio"]{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.checks input[type="radio"] + label , .bdcheck input[type="radio"] + label{
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    width:200px;
+    color: #505050;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.checks input[type="radio"] + label::before ,
+.bdcheck input[type="radio"] + label::before
+{
+    /* 가짜 체크박스 */
+    content: ' ';
+    display: inline-block;
+    width: 25px;
+    /* 체크박스의 너비를 지정 */
+    height: 25px;
+    /* 체크박스의 높이를 지정 */
+    line-height: 25px;
+    /* 세로정렬을 위해 높이값과 일치 */
+    margin: -2px 8px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #fafafa;
+    border: 1px solid #cacece;
+    border-radius: 3px;
+    
+}
+
+.checks input[type="radio"]:checked + label:before ,
+.bdcheck input[type="radio"]:checked + label:before
+{
+    /* 체크박스를 체크했을때 */
+    content: '\2714';
+    /* 체크표시 유니코드 사용 */
+    color: #99a1a7;
+    text-shadow: 1px 1px #fff;
+    background: #e9ecee;
+    border-color: #adb8c0;
+}
+
+
+/*****************푸터 영역*********/
+.ft_wrap {
+    width: 100%;
+    height: 600px;
+    background-color: #222222;
+    margin-top: 200px;
+}
+
+.ft_top {
+    width: 100%;
+    height: 130px;
+    display: flex;
+}
+
+.ft_sns {
+    display: flex;
+    width: 75%;
+    padding-left: 2%;
+}
+
+.ft_sns li {
+    transform: scale(.7);
+}
+
+.fs {
+    width: 360px;
+    height: 75px;
+    margin-top: 2%;
+    background-color: #222222;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.3vw;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 6%;
+
+}
+
+select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+
+.ft_bt {
+    width: 100%;
+    color: #fff;
+    padding: 2%;
+    font-size: 1.2vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ft_bt > h4 {
+    font-size: 1.8vw;
+}
+
+.ft_menu {
+    display: flex;
+}
+
+.ft_menu li {
+    padding: 0 10px 0 10px;
+}
+
+.ft_menu li:hover a {
+    color: #E1A10D;
+}
+
+.ft_menu li:nth-child(1) {
+    padding-left: 0;
+}
+
+.ft_menu a {
+    color: #fff;
+}
+
+.ft_txt {
+    padding-top: 8%;
+}

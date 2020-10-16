@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>시승/상담신청하기</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="menu"><img src="images/menu.png" alt="메뉴"></div>
+            <div class="headerline"><img src="images/headerline.png" alt="선"></div>
+            <div class="logo"><img src="images/logo.png" alt="로고"></div>
+        </header>
+        <!--시승상담제목-->
+        <h1 class="contact_tit_b">시승/상담 신청하기</h1>
+        <!--개인정보입력제목-->
+        <div class="contact_wrap">
+            <div class="contact_tit_s">
+                <h2>개인정보입력</h2>
+                <h5>일부 전시장에서는 만26세 이상만 운전자 시승이 가능하며, 만 26세 이하 고객께서는 동승석 탑승으로 시승이 제한될 수 있습니다.</h5>
+                <hr>
+            </div>
+            <!--개인정보입력파트-->
+            <form>
+                <ul>
+                    <li>
+                        <label for="name">신청자 성명</label>
+                        <input type="text" name="name" id="name" maxlength="15" autofocus required placeholder="이름을 입력해주세요">
+                    </li>
+                    <hr>
+                    <li class="car_birth">
+                        <label for="car_model">현재보유 차량모델</label>
+                        <input type="text" name="car_model" id="car_model" maxlength="30" required placeholder="보유차량을 입력해주세요">
+                        <label for="birth">출생년도</label>
+                        <select class="birth">
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                        </select>
+                    </li>
+                    <hr>
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="text" name="phone" id="phone" placeholder="ex) 010-333-5555" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    </li>
+                    <hr>
+                    <li class="place">
+                        <label for="addr">전시장 입력</label>
+                        <input type="text" name="addr" id="addr1" placeholder="서울특별시" maxlength="10" required>
+                        <input type="text" name="addr" id="addr2" placeholder="강남구" maxlength="10" required>
+                        <input type="text" name="addr" id="addr3" placeholder="강남대치전시장" maxlength="10" required>
+                    </li>
+                    <hr>
+                    <li class="buydate">
+                        <label for="buy">구매시기</label>
+                        <span class="bdcheck">
+                           <input type="radio" value="tm"><label for="m3">3개월 이내</label>
+                            <input type="radio" value="sm"><label for="m6">6개월 이내</label>
+                            <input type="radio" value="oy"><label for="y1">1년 이내</label>
+                            <input type="radio" value="ty"><label for="y2">2년 이내</label>
+                            <input type="radio" value="np"><label for="np">계획없음</label>
+                        </span>
+                    </li>
+                    <hr>
+                    <li>
+                        <label for="date">시승/상담 희망일</label>
+                        <input type="date" name="birth" id="birth" placeholder=" YYYY-MM-DD" maxlength="10" min="2020-10-07" max="2030-10-07" required>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <!--개인수집체크제목-->
+        <div class="contact_check_wrap">
+            <div class="contact_tit_s">
+                <h2>개인정보 수집·이용·제공 동의 </h2>
+                <h5>귀하는 아래 동의 내용을 확인한 후 개별 동의를 하실 수도 있습니다. 아래의 동의 항목 중에는 선택 동의 사항이 포함되어 있습니다.</h5>
+                <hr>
+            </div>
+            <!--개인수집체크파트-->
+            <div class="contact_check_area">
+                <ul>
+                    <li>
+                        <span class="l_b">
+                            <label>개인정보 수집 및 이용동의(필수) </label>
+                            <button>자세히보기</button>
+                        </span>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd" name="ex_rds">
+                            <label for="ex_rd">동의</label>
+                        </div>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd2" name="ex_rds">
+                            <label for="ex_rd2">동의안함</label>
+                        </div>
+
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="l_b">
+                            <label>개인정보 제3자 제공 동의(필수) </label>
+                            <button>자세히보기</button>
+                        </span>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd" name="ex_rds">
+                            <label for="ex_rd">동의</label>
+                        </div>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd2" name="ex_rds">
+                            <label for="ex_rd2">동의안함</label>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="l_b">
+                            <label>개인정보 마케팅목적 수집 및 이용 동의(선택)</label>
+                            <button>자세히보기</button>
+                        </span>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd" name="ex_rds">
+                            <label for="ex_rd">동의</label>
+                        </div>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd2" name="ex_rds">
+                            <label for="ex_rd2">동의안함</label>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="l_b">
+                            <label>영리목적 광고성 정보 수신에 대한 동의(선택)</label>
+                            <button>자세히보기</button>
+                        </span>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd" name="ex_rds">
+                            <label for="ex_rd">동의</label>
+                        </div>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd2" name="ex_rds">
+                            <label for="ex_rd2">동의안함</label>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="l_b">
+                            <label>개인정보 처리업무 위탁에 대한 동의(선택)</label>
+                            <button>자세히보기</button>
+                        </span>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd" name="ex_rds">
+                            <label for="ex_rd">동의</label>
+                        </div>
+
+                        <div class="checks">
+                            <input type="radio" id="ex_rd2" name="ex_rds">
+                            <label for="ex_rd2">동의안함</label>
+                        </div>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+
+        </div>
+        <!--푸터 영역-->
+        <footer class="ft_wrap">
+            <div class="ft_top">
+                <ul class="ft_sns">
+                    <li><a href="#"><img src="images/icon/sns_is.png" alt="아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon/sns_tw.png" alt="아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon/sns_kt.png" alt="아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon/sns_yt.png" alt="아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon/sns_fb.png" alt="아이콘"></a></li>
+                </ul>
+                <select class="fs">
+                    <option value="" select="selected">Family Site</option>
+                    <option value="">현대건설</option>
+                    <option value="">현대카드</option>
+                    <option value="">현대해상</option>
+                </select>
+            </div>
+            <hr style="border: solid 1px #fff;">
+            <div class="ft_bt">
+                <h4>Customer Service</h4>
+                <ul class="ft_menu">
+                    <li><a href="#">FAQ</a></li> |
+                    <li><a href="#">온라인상담</a></li> |
+                    <li><a href="#">칭찬알림방</a></li> |
+                    <li><a href="#">하자재발통지</a></li>
+                </ul>
+                <section class="ft_txt">고객센터 : 080-600-6000(승용), 080-200-6000(상용) <br> COPYRIGHT ⓒ HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</section>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

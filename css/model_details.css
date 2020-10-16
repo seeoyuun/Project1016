@@ -1,0 +1,956 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: #f2f2f2;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+
+.first_wrap {
+    width: 100%;
+    height: 100px;
+    background-color: #888;
+    position: relative;
+}
+
+.menu {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    transform: scale(.9);
+}
+
+.headerline {
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    width: 65%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 3%;
+    right: 8%;
+}
+
+.model_menu_wrap {
+    font-size: 1.2vw;
+    margin: 5% 0 5% 10%;
+}
+
+/***********************메뉴 클릭 시 나오는 전체메뉴**************************/
+.menu_wrap {
+    position: absolute;
+    left: -150%;
+    /*왼쪽에 나가있음!*/
+    z-index: 100;
+    width: 100%;
+    height: 900px;
+    background-color: #013A70;
+    transition: left .6s ease-in-out;
+}
+
+.menu_wrap.on {
+    left: 0%;
+}
+
+#menu_ul {
+    padding: 11%;
+    line-height: 80px;
+}
+
+#menu_ul a,
+.menu_close {
+    color: #fff;
+    font-size: 2vw;
+    display: block;
+}
+
+#menu_ul li:hover a {
+    color: #E1A10D;
+    font-weight: bold;
+    display: block;
+}
+
+.menu_close {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.menu_close:hover {
+    font-weight: bold;
+}
+
+.menu_img {
+    position: absolute;
+    top: 20%;
+    right: 9%;
+}
+
+.menu_txt {
+    position: absolute;
+    top: 58%;
+    right: 9%;
+    color: #fff;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+#menu_ul2 {
+    position: absolute;
+    top: 68%;
+    right: 19%;
+    line-height: 50px;
+}
+
+#menu_ul2 a {
+    color: #fff;
+    font-size: 1.2vw;
+
+}
+
+#menu_ul2 li a:hover {
+    color: #E1A10D;
+    font-weight: bold;
+}
+
+/*********************************************/
+.main_bg {
+    transform: scale(.8);
+    position: relative;
+    
+}
+
+.main_bg img {
+    width: 100%;
+}
+
+.main_txt {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+/*외부차량*/
+.exterior_wrap,
+.interior_wrap {
+    width: 100%;
+}
+
+.exterior_wrap {
+    margin-top: 10%;
+}
+
+.exterior_wrap h1,
+.interior_wrap h1,
+.interior_slide_wrap h1 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 5% 0 5% 0;
+}
+
+.ext_sec,
+.int_sec {
+    display: flex;
+    justify-content: center;
+}
+
+.int_sec img {
+    width: 100%;
+}
+
+.ext_sec img {
+    width: 570px;
+    height: 300px;
+
+}
+
+.ext_sec1 {
+    margin-right: 1%;
+}
+
+.ext_tit,
+.int_tit,
+.conven_tit {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3vw;
+    padding: 2% 0 2% 0;
+}
+
+.ext_txt,
+.int_txt,
+.conven_txt {
+    text-align: center;
+    display: block;
+    font-size: .8vw;
+}
+
+.conven_sec1,
+.conven_sec3 {
+    margin-right: 2%;
+}
+
+.conven_sec1 img,
+.conven_sec2 img,
+.conven_sec3 img,
+.conven_sec4 img {
+    width: 100%;
+}
+
+/*외부차량컬러*/
+.extcolor_wrap {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.extcolor_wrap h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10% 0 5% 0;
+}
+
+.extcolor_area {
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+.ecimg {
+    width: 50%;
+}
+
+.ecimg img {
+    transform: scale(1.2);
+    width: 60%;
+}
+
+.extcolor li {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.extcolor li img {
+    width: 70%;
+}
+
+.extcolor span {
+    font-size: 1.1vw;
+}
+
+/*차량외부사진2개*/
+.ext_model {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 15% auto;
+}
+
+
+.ext_model img {
+    width: 50%;
+    margin-right: 2%;
+}
+
+/*차량인테리어슬라이드*/
+.interior_slide_wrap {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    float: left;
+    overflow: hidden;
+    margin-top: 10%;
+}
+
+#interior_slide {
+    position: relative;
+    width: 400%;
+    height: 100%;
+    left: 0;
+}
+
+#interior_slide li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+#interior_slide img {
+    width: 100%;
+}
+
+.intwrap {
+    overflow: hidden;
+    width: 1200px;
+    height: 650px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#interior_slide img {
+    width: 1200px;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+}
+
+#interior_slide img {
+    width: 1200px;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+}
+
+.int_sec1 {
+    margin-right: 2%;
+}
+
+.int_slide_prev,
+.int_slide_next {
+    position: absolute;
+    top: 50%;
+    width: 4vw;
+    height: 4vw;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20%;
+    text-align: center;
+    line-height: 5vw;
+    display: block;
+}
+
+.int_slide_prev img,
+.int_slide_next img {
+    transform: scale(.6);
+
+}
+
+.int_slide_prev {
+    left: 23vw;
+}
+
+.int_slide_next {
+    right: 20vw;
+}
+
+/*차량내부편리함*/
+.Convenience_wrap h1 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.conven_tit {
+    display: block;
+}
+
+.conven_sec_wrap1,
+.conven_sec_wrap2 {
+    display: flex;
+    justify-content: center;
+}
+
+.conven_sec_wrap1 {
+    margin-bottom: 10%;
+}
+
+
+
+.space_wrap {
+    text-align: center;
+    margin-top: 10%;
+    position: relative;
+
+}
+
+.space_wrap a {
+    display: inline-block;
+}
+
+.space_wrap h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 10% 0 5% 0;
+}
+
+.click_space {
+    border: 1px solid #000;
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.cs_tit,
+.cs_txt {
+    display: block;
+}
+
+.cs_tit {
+    font-size: 1.2vw;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+.cs_txt {
+    font-size: .8vw;
+}
+
+/*배너*/
+.model_banner {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(180deg, #013A70, #fff);
+    display: flex;
+    margin: 10% 0;
+}
+
+.model_banner section {
+    margin: 2% 0 10% 20%;
+}
+
+.md_ban1,
+.md_ban2 {
+    position: relative;
+}
+
+.md_ban1 span,
+.md_ban2 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vw;
+    color: #fff;
+    font-weight: 800;
+}
+
+
+.md_ban1 img {
+    width: 420px;
+    height: 220px;
+
+}
+
+.md_ban2 img {
+    width: 420px;
+    height: 220px;
+
+}
+
+.md_ban1,
+.md_ban2 {
+    width: 420px;
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+
+}
+
+.md_ban1:hover,
+.md_ban2:hover {
+    opacity: .5;
+}
+
+
+/*****************푸터 영역*********/
+.ft_wrap {
+    width: 100%;
+    height: 600px;
+    background-color: #222222;
+}
+
+.ft_top {
+    width: 100%;
+    height: 155px;
+    display: flex;
+}
+
+.ft_sns {
+    display: flex;
+    width: 75%;
+    padding-left: 2%;
+}
+
+.ft_sns li {
+    transform: scale(.7);
+}
+
+.fs {
+    width: 360px;
+    height: 75px;
+    margin-top: 2%;
+    background-color: #222222;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.3vw;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 6%;
+
+}
+
+select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+
+.ft_bt {
+    width: 100%;
+    color: #fff;
+    padding: 3%;
+    font-size: 1.2vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ft_bt > h4 {
+    font-size: 1.8vw;
+}
+
+.ft_menu {
+    display: flex;
+}
+
+.ft_menu li {
+    padding: 0 10px 0 10px;
+}
+
+.ft_menu li:hover a {
+    color: #E1A10D;
+}
+
+.ft_menu li:nth-child(1) {
+    padding-left: 0;
+}
+
+.ft_menu a {
+    color: #fff;
+}
+
+.ft_txt {
+    padding-top: 8%;
+}
+
+/*****************미디어쿼리*************/
+@media all and (max-width:480px) {
+
+    .headerline {
+        display: none;
+    }
+
+    .menu {
+        transform: scale(.7);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .main_bg {
+        transform: scale(1.5);
+        position: relative;
+        margin-top: 0;
+    }
+
+    .main_txt {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        color: #fff;
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+
+    .first_wrap {
+        width: 100%;
+        height: 80px;
+    }
+
+    /*외부차량*/
+    .exterior_wrap,
+    .interior_wrap {
+        width: 100%;
+    }
+
+    .exterior_wrap {
+        margin-top: 10%;
+    }
+
+    .exterior_wrap h1,
+    .interior_wrap h1,
+    .interior_slide_wrap h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 10% 0 5% 0;
+    }
+
+    .ext_sec,
+    .int_sec {
+        flex-wrap: wrap;
+
+    }
+
+    .int_sec img {
+        width: 100%;
+    }
+
+    .ext_sec img {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .ext_sec1 {
+        margin-right: 1%;
+    }
+
+    .ext_tit,
+    .int_tit,
+    .conven_tit {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 2% 0 2% 0;
+    }
+
+    .ext_txt,
+    .int_txt,
+    .conven_txt {
+        text-align: center;
+        display: block;
+        font-size: 10px;
+    }
+
+    /*차량외부사진2개*/
+    .ext_model {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin: 15% auto;
+        transition: all .5s;
+    }
+
+
+    .ext_model img {
+        width: 100%;
+        margin-right: 2%;
+    }
+
+    .ext_sec1 {
+        margin-bottom: 20px;
+    }
+
+    /*외부차량컬러*/
+    .extcolor_wrap {
+        width: 100%;
+        margin-top: 10%;
+        flex-wrap: wrap;
+        flex: 1;
+
+
+    }
+
+    .extcolor_wrap h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 10% 0 5% 0;
+    }
+
+    .extcolor_area {
+        text-align: center;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    .ecimg {
+        width: 100%;
+    }
+
+    .ecimg img {
+        transform: scale(1.2);
+        width: 100%;
+    }
+
+    .extcolor li {
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .extcolor li img {
+        width: 70%;
+    }
+
+    .extcolor span {
+        font-size: 1.1vw;
+    }
+
+    /*차량인테리어슬라이드*/
+    .interior_slide_wrap {
+        position: relative;
+        width: 100%;
+        height: 1080px;
+        float: left;
+        overflow: hidden;
+        margin-top: 10%;
+    }
+
+    #interior_slide {
+        position: relative;
+        width: 400%;
+        height: 100%;
+        left: 0;
+    }
+
+    #interior_slide li {
+        float: left;
+        width: 25%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .intwrap {
+        overflow: hidden;
+        width: 1200px;
+        height: 650px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #interior_slide img {
+        width: 1200px;
+        height: 650px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .int_sec1 {
+        margin-right: 2%;
+    }
+
+    .int_slide_prev,
+    .int_slide_next {
+        display: none;
+    }
+
+    .int_slide_prev img,
+    .int_slide_next img {
+        transform: scale(.6);
+
+    }
+
+    .int_slide_prev {
+        left: 23vw;
+    }
+
+    .int_slide_next {
+        right: 20vw;
+    }
+
+    /*차량내부편리함*/
+    .Convenience_wrap h1 {
+        font-size: 50px;
+        text-align: center;
+        margin: 0 0 5% 0;
+    }
+
+    .conven_tit {
+        display: block;
+    }
+
+    .conven_sec_wrap1,
+    .conven_sec_wrap2 {
+        display: block;
+
+        justify-content: center;
+    }
+
+    .conven_sec_wrap1 {
+        margin-bottom: 10%;
+    }
+
+    /*배너*/
+    .model_banner {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, #013A70, #fff);
+
+        margin: 7% 0;
+    }
+
+    .model_banner section {
+        margin: 2% 0 2% 0%;
+    }
+
+    .md_ban1,
+    .md_ban2 {
+        position: relative;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    .md_ban1 span,
+    .md_ban2 span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3vw;
+        color: #fff;
+        font-weight: 800;
+    }
+
+
+    .md_ban1 img {
+        display: none;
+
+    }
+
+    .md_ban2 img {
+        display: none;
+
+    }
+
+    .md_ban1,
+    .md_ban2 {
+        width: 100px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .md_ban1:hover,
+    .md_ban2:hover {
+        opacity: .5;
+    }
+
+    /*****************푸터 영역*********/
+    .ft_wrap {
+        width: 100%;
+        height: 400px;
+        background-color: #222222;
+    }
+
+    .ft_top {
+        width: 100%;
+        height: 200px;
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .ft_sns_wrap {
+        width: 50%;
+    }
+
+    .ft_sns {
+        display: flex;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .ft_sns li {
+        transform: scale(.7);
+    }
+
+    .fs {
+        width: 230px;
+        height: 70px;
+        margin-top: 2%;
+        background-color: #222222;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Oswald', sans-serif;
+        padding-left: 6%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    select {
+        -moz-appearance: none;
+        /* Firefox */
+        -webkit-appearance: none;
+        /* Safari and Chrome */
+        appearance: none;
+    }
+
+    .ft_bt {
+        width: 100%;
+        color: #fff;
+        padding: 3%;
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .ft_bt > h4 {
+        font-size: 20px;
+    }
+
+    .ft_menu {
+        display: flex;
+    }
+
+    .ft_menu li {
+        padding: 0 10px 0 10px;
+    }
+
+    .ft_menu li:hover a {
+        color: #E1A10D;
+    }
+
+    .ft_menu li:nth-child(1) {
+        padding-left: 0;
+    }
+
+    .ft_menu a {
+        color: #fff;
+    }
+
+    .ft_txt {
+        padding-top: 8%;
+    }
+
+
+
+
+
+}

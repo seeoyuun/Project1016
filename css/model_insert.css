@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #888;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    transform: scale(.9);
+}
+
+.headerline {
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    width: 65%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 3%;
+    right: 8%;
+}
+
+/***********************메뉴 클릭 시 나오는 전체메뉴**************************/
+.menu_wrap {
+    position: relative;
+    left: -100%;
+    /*왼쪽에 나가있음!*/
+    z-index: 1;
+    width: 100%;
+    height: 900px;
+    background-color: #013A70;
+    transition: left .6s ease-in-out;
+}
+
+.menu_wrap.on {
+    left: 0;
+}
+
+#menu_ul {
+    padding: 11%;
+    line-height: 80px;
+}
+
+#menu_ul a,
+.menu_close {
+    color: #fff;
+    font-size: 2vw;
+    display: block;
+}
+
+#menu_ul li:hover a {
+    color: #E1A10D;
+    font-weight: bold;
+    display: block;
+}
+
+.menu_close {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.menu_close:hover {
+    font-weight: bold;
+}
+
+.menu_img {
+    position: absolute;
+    top: 20%;
+    right: 9%;
+}
+
+.menu_txt {
+    position: absolute;
+    top: 58%;
+    right: 9%;
+    color: #fff;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+#menu_ul2 {
+    position: absolute;
+    top: 68%;
+    right: 19%;
+    line-height: 50px;
+}
+
+#menu_ul2 a {
+    color: #fff;
+    font-size: 1.2vw;
+
+}
+
+#menu_ul2 li a:hover {
+    color: #E1A10D;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+}
+
+.insert_menu_ul {
+    display: flex;
+    font-weight: 600;
+}
+
+.insert_menu_ul li {
+    margin: 2% 0 1% 2%;
+    font-size: 1.2vw;
+}
+
+.insert_menu_ul li:nth-child(3) a {
+    color: blue;
+}
+.main_banner{
+    width: 80%;
+    margin: 0 auto;
+}
+.main_banner img {
+    height: 100%;
+    width: 100%;
+}
+
+.main_insert_wrap h1 {
+    font-size: 5vw;
+    margin: 7% 0 3% 11%;
+}
+
+.model_icon_wrap {
+    width: 80%;
+    height: 5vw;
+    border: 1px solid #707070;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+.model_icon_wrap ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.model_icon_wrap ul img {
+    width: 50%;
+    height: 40px;
+}
+
+.model_icon_wrap ul li {
+    margin-right: 2%;
+    padding: 2%;
+}
+
+.model_icon_wrap ul a:hover img {
+    transform: rotate(30deg);
+    transition: all .4s ease-in;
+}
+
+.model_icon_wrap ul span {
+    margin-left: 8%;
+    vertical-align: 15px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.small_car_wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.small_car_wrap h2 img {
+    width: 120px;
+    height: 60px;
+}
+
+.small_car_wrap h2 span {
+    margin-left: 2%;
+    vertical-align: 15px;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.small_car_top_area,
+.small_car_bt_area
+{
+    margin-bottom: 100px;
+}
+
+.small_car_top_area ul,
+.small_car_bt_area ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.small_car_top_area li,
+.small_car_bt_area li {
+    width: 280px;
+    height: 380px;
+    line-height: 97px;
+    background-color: #ECECEC;
+    text-align: center;
+    position: relative;
+}
+
+.small_car_top_area a,
+.small_car_bt_area a {
+    position: absolute;
+}
+
+.small_car_top_area li h4,
+.small_car_bt_area li h4 {
+    font-size: 1.5vw;
+    font-weight: bold;
+
+}
+
+.small_car_top_area li small,
+.small_car_bt_area li small {
+    font-size: 1vw;
+    display: block;
+    font-weight: 800;
+}
+
+.small_car_top_area li img,
+.small_car_bt_area li img {
+    width: 85%;
+}
+
+/* (1). 보검이 0도 회전하기 */
+
+.small_car_top_area a:last-child,
+.small_car_bt_area a:last-child{
+    transform: rotateY(0deg);
+    transition: all .4s ease-out .4s;
+    /*transition:속성시간이지;*/
+    /*ease-out은 처음에 등속도 마지막에 천천히*/
+}
+
+/* (2). 보검이 오버시 90도 회전하기 */
+
+.small_car_top_area li:hover a:last-child,
+.small_car_bt_area li:hover a:last-child{
+    transform: rotateY(90deg);
+    transition: all .4s ease-in;
+    /*가속도 ease-in은 처음엔 천천히 마지막에 등속도*/
+}
+
+/* (3). 유정이 처음에 90도 돌려놓기 */
+.small_car_top_area li a:first-child,
+.small_car_bt_area li a:first-child
+{
+    transform: rotateY(90deg);
+    transition: all .4s ease-in;
+}
+
+/* (4). 유정이 오버시 0도로 회전하기(원래각도로, 보검이 회전때까지 기다려야함) */
+.small_car_top_area li:hover a:first-child,
+.small_car_bt_area li:hover a:first-child
+{
+    transform: rotateY(0deg);
+    transition: all .4s ease-out .4s;
+    /*ease-out은 처음에 등속도 마지막에 천천히*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************푸터 영역*********/
+.ft_wrap {
+    width: 100%;
+    height: 600px;
+    background-color: #222222;
+}
+
+.ft_top {
+    width: 100%;
+    height: 155px;
+    display: flex;
+}
+
+.ft_sns {
+    display: flex;
+    width: 75%;
+    padding-left: 2%;
+}
+
+.ft_sns li {
+    transform: scale(.7);
+}
+
+.fs {
+    width: 360px;
+    height: 75px;
+    margin-top: 2%;
+    background-color: #222222;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.3vw;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 6%;
+
+}
+
+select {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+
+.ft_bt {
+    width: 100%;
+    color: #fff;
+    padding: 3%;
+    font-size: 1.2vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ft_bt > h4 {
+    font-size: 1.8vw;
+}
+
+.ft_menu {
+    display: flex;
+}
+
+.ft_menu li {
+    padding: 0 10px 0 10px;
+}
+
+.ft_menu li:hover a {
+    color: #E1A10D;
+}
+
+.ft_menu li:nth-child(1) {
+    padding-left: 0;
+}
+
+.ft_menu a {
+    color: #fff;
+}
+
+.ft_txt {
+    padding-top: 8%;
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대자동차</title>
+    <link rel="stylesheet" href="css/common.css">
+    <!-- <link href="font/css/all.css" rel="stylesheet">-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-touch-punch.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 첫번째- 메인이미지 슬라이드 영역 -->
+        <div class="first_wrap">
+            <ul id="imgslide">
+                <li data-nm="tucson">
+                    <a href="#">
+                        <img src="images/main/mainbg_txt.png" alt="이미지">
+                    </a>
+                </li>
+                <li data-nm="kona">
+                    <a href="#">
+                        <img src="images/main/mainbg2_txt.png" alt="이미지">
+                    </a>
+                </li>
+                <li data-nm="avante">
+                    <a href="#">
+                        <img src="images/main/mainbg3_txt.png" alt="이미지">
+                    </a>
+                </li>
+                <li data-nm="avante">
+                    <a href="#">
+                        <img src="images/main/mainbg4_txt.png" alt="이미지">
+                    </a>
+                </li>
+                <li data-nm="camping">
+                    <a href="#">
+                        <img src="images/main/mainbg5_txt.png" alt="이미지">
+                    </a>
+                </li>
+            </ul>
+            <!--이동버튼-->
+            <a href="#" class="slide_prev"><img src="images/icon/prev.png" alt="왼쪽이동버튼"></a>
+            <a href="#" class="slide_next"><img src="images/icon/next.png" alt="오른쪽이동버튼"></a>
+            <div class="header_menu">
+                <span class="headerline"><img src="images/headerline.png" alt="라인"></span>
+                <a href="#" class="menu">
+                    <img src="images/menu.png" alt="메뉴">
+                </a>
+                <a href="#" class="logo"><img src="images/logo.png" alt="로고"></a>
+                <a href="#" class="header_search"><img src="images/icon/search2_white.png" alt="아이콘"></a>
+            </div>
+            <!--메뉴 클릭시 나오는 메뉴 창-->
+            <div class="menu_wrap">
+                <ul id="menu_ul">
+                    <li><a href="#">모델</a></li>
+                    <li><a href="#">멤버십&차량관리</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">회사소개</a></li>
+                </ul>
+                <a href="#" class="menu_close">닫기</a>
+
+                <div class="menu_img">
+                    <img src="images/main/main_tucson2.JPG" alt="이미지">
+                </div>
+
+                <span class="menu_txt">The All-New TUCSON 9월 공개예정</span>
+                <ul id="menu_ul2">
+                    <li><a href="#">시승/상담 신청하기</a></li>
+                    <li><a href="#">온라인 서비스 예약</a></li>
+                </ul>
+            </div>
+
+
+            <a href="#" class="click">자세히 보기</a>
+        </div>
+        <!--두번째 - 프로모션-->
+        <div class="second_wrap">
+            <div class="sca">
+
+                <div class="type-wrap">
+                    <span id="typed" style="white-space: pre"></span>
+                    <!--
+                                   white-space: pre 있는 그대로 화면에 출력!
+                                   이설정이 없으면 줄바꿈 타이핑이 적용안됨!
+                               -->
+                </div>
+            </div>
+            <div class="promo">
+
+                <a href="#">
+                    <h4>All-New Avante<br><small>최대75만할인<br>SaveAuto 30만</small></h4>
+                    <img src="images/main/s_avan.JPG" alt="이미지">
+                </a>
+                <a href="#">
+                    <h4>GRANDEUR<br><small>최대110만할인<br>SaveAuto 30만/50만</small></h4>
+                    <img src="images/main/s_gra.JPG" alt="이미지">
+                </a>
+                <a href="#">
+                    <h4>SONATA<br><small>최대5%+200만할인<br>SaveAuto 30만</small></h4>
+                    <img src="images/main/s_sonata.JPG" alt="이미지">
+                </a>
+                <a href="#">
+                    <h4>KONA<br><small>최대5%+155만할인<br>SaveAuto 30만</small></h4>
+                    <img src="images/main/s_kona.JPG" alt="이미지">
+                </a>
+                <a href="#">
+                    <h4>TUCSON<br><small>최대70만할인<br>SaveAuto 30만</small></h4>
+                    <img src="images/main/s_tucson.JPG" alt="이미지">
+                </a>
+                <a href="#">
+                    <h4>SANTAFE<br><small>최대90만할인<br>SaveAuto 30만</small></h4>
+                    <img src="images/main/s_santafe.JPG" alt="이미지">
+                </a>
+            </div>
+        </div>
+        <!--세번째 - 배너 영역-->
+        <div class="third_wrap">
+            <ul class="banner">
+                <li><a href="#"><img src="images/icon/search.png" alt="이미지"><span>상세모델검색</span></a></li>
+                <li><a href="#"><img src="images/icon/car.png" alt="이미지"><span>시승신청하기</span></a></li>
+                <li><a href="#"><img src="images/icon/globe.png" alt="이미지"><span>이 달의 프로모션</span></a></li>
+                <li><a href="#"><img src="images/icon/people.png" alt="이미지"><span>구매 상담</span></a></li>
+            </ul>
+        </div>
+        <!-- 네번째 영역 - 차종라인업-->
+        <div class="fourth_wrap">
+            <h1 class="tit lineup">차종라인업</h1>
+            <ul class="car_lineup">
+                <li><a href="#"><img src="images/side/avante-45side.png" alt="이미지">
+                        <span>AVANTE</span>
+                        <small>승용차,휘발유/경유,~1,598cc,10.5~15.4km/ℓ</small>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/side/venu_side.png" alt="이미지">
+                        <span>VENU</span>
+                        <small>승용차,휘발유/경유,~1,598cc,10.5~15.4km/ℓ</small>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/side/tucson_side2.png" alt="이미지">
+                        <span>TUCSON</span>
+                        <small>승용차,휘발유/경유,~1,598cc,10.5~15.4km/ℓ</small>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/side/grandeur_front_black.png" alt="이미지">
+                        <span>GRANDEUR</span>
+                        <small>승용차,휘발유/경유,~1,598cc,10.5~15.4km/ℓ</small>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/side/veloster_side2.png" alt="이미지">
+                        <span>VELOSTER</span>
+                        <small>승용차,휘발유/경유,~1,598cc,10.5~15.4km/ℓ</small>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/side/pari_side.png" alt="이미지">
+                        <span>PARIISADE</span>
+                        <small>승용차,휘발유/경유,~1,598cc,10.5~15.4km/ℓ</small>
+                    </a>
+                </li>
+                <li><a href="#"><img src="images/side/avante-hybrid-45side.png" alt="이미지">
+                        <span>AVANTE</span>
+                        <small>승용차,휘발유/경유,~1,598cc,10.5~15.4km/ℓ</small>
+                    </a>
+                </li>
+
+            </ul>
+            <a href="#" class="lineup_prev"><img src="images/icon/prev.png" alt="이전"></a>
+            <a href="#" class="lineup_next"><img src="images/icon/next.png" alt="다음"></a>
+        </div>
+        <!--다섯번째 영역 - O&D-->
+        <div class="fifth_wrap">
+            <h1 class="tit od">Owners & Drivers</h1>
+            <div class="mha">
+                <a href="#">
+                    <img src="images/main/phone_girl.jpg" alt="이미지">
+                    <h3>My HYUNDAL App</h3>
+                    <small>
+                        내차 관련한 정보를 한눈에 손쉽게 확인해 보시고,<br>
+                        다양한 혜택도 누려 보시기 바랍니다.
+                    </small>
+                </a>
+                <a href="#" class="mha2">
+                    <img src="images/main/car_repair.jpg" alt="이미지">
+                    <h3>사고 수리 온라인 견적</h3>
+                    <small>
+                        사고 차량을 제대로 수리하는 것이 고객님 가족의 안전과 재산을 보호하는길입니다.<br>
+                        현대자동차의 전문화된 수리로 예상치 못한 사고도 도와 드리겠습니다.
+                    </small>
+                </a>
+                <a href="#">
+                    <img src="images/main/car_mom.JPG" alt="이미지">
+                    <h3>현대자동차 공식 서비스</h3>
+                    <small>
+                        저희 공식 서비스는 순정 부품과 제조사 매뉴얼을 통한 수리로 고객님의 현대자동차를 위한<br>
+                        최적화 된 서비스를 제공하고 있습니다. 현대자동차 맞춤형 부품과 수리로 안전하고 편안한 주행을 즐겨 보십시오.
+                    </small>
+                </a>
+            </div>
+        </div>
+        <!--여섯번째 영역 - 2번째 배너-->
+        <div class="sixth_wrap">
+            <h2>내 차를 아직 결정하지 못했다면?</h2>
+            <a href="#" class="onesection">
+                <img src="images/icon/chart_white.png" alt="아이콘">
+                <span class="sectxt">
+                    <h4>상세모델검색</h4>
+                    <small>꼭 필요한 사양이 포함된 <br>모델을 검색해보세요</small>
+                </span>
+            </a>
+            <a href="#" class="twosection">
+                <img src="images/icon/search2_white.png" alt="아이콘">
+                <span class="sectxt">
+                    <h4>내 차 추천받기</h4>
+                    <small>라이프 스타일에 맞는 <br>차를 추천해드립니다.</small>
+                </span>
+            </a>
+        </div>
+        <!--푸터 영역-->
+        <footer class="ft_wrap">
+            <div class="ft_top">
+                <div class="ft_sns_wrap">
+                    <ul class="ft_sns">
+                        <li><a href="#"><img src="images/icon/sns_is.png" alt="아이콘"></a></li>
+                        <li><a href="#"><img src="images/icon/sns_tw.png" alt="아이콘"></a></li>
+                        <li><a href="#"><img src="images/icon/sns_kt.png" alt="아이콘"></a></li>
+                        <li><a href="#"><img src="images/icon/sns_yt.png" alt="아이콘"></a></li>
+                        <li><a href="#"><img src="images/icon/sns_fb.png" alt="아이콘"></a></li>
+                    </ul>
+                </div>
+                <select class="fs">
+                    <option value="" select="selected">Family Site</option>
+                    <option value="">현대건설</option>
+                    <option value="">현대카드</option>
+                    <option value="">현대해상</option>
+                </select>
+            </div>
+            <hr style="border: solid 1px #fff;">
+            <div class="ft_bt">
+                <h4>Customer Service</h4>
+                <ul class="ft_menu">
+                    <li><a href="#">FAQ</a></li> |
+                    <li><a href="#">온라인상담</a></li> |
+                    <li><a href="#">칭찬알림방</a></li> |
+                    <li><a href="#">하자재발통지</a></li>
+                </ul>
+                <section class="ft_txt">고객센터 : 080-600-6000(승용), 080-200-6000(상용) <br> COPYRIGHT ⓒ HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</section>
+            </div>
+        </footer>
+    </div>
+    <button id="tbtn">
+        <img src="images/icon/up.png" alt="아이콘">
+    </button>
+</body></html>
